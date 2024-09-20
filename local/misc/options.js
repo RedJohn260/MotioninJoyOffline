@@ -1,4 +1,13 @@
 var MIJconfig;
+var Cname = new Array();
+Cname['11.ff.33.41.00.00'] = 'PXN-8601/PXN-8633';
+Cname['83.80.21.65.00.00'] = 'BTP-2165';
+Cname['83.80.21.88.00.00'] = 'BTP-2186';
+Cname['14.6b.03.02.00.00'] = 'BTP-2269';
+Cname['12.bd.c0.03.00.00'] = 'BTP-2118';
+Cname['0e.8f.00.03.00.00'] = 'BTP-C036';
+Cname['00.79.00.06.00.00'] = 'Generic game controller';
+Cname['1c.13.67.08.00.00'] = 'ALEC Game pad';
 $(function ()
 {
     SetBusy(false);
