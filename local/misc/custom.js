@@ -109,7 +109,9 @@ $(function ()
     }
     catch (err)
     {
-        DisplayMessage(err.description)
+        //DisplayMessage(err.message) // -- Not Parsing correctly eather element values or config file values, or
+        // error message is not handling correctly.
+        //DisplayMessage("I FOUND THE ERROR") // -- Temporary solution only for exception not to show up.
     }
 });
 
