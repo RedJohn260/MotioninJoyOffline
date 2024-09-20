@@ -56,11 +56,33 @@ $(function ()
 
 function GetConfig()
 {
-    return eval('(' + window.external.MIJconfig(0, 0, "") + ')')
+    //return eval('(' + window.external.MIJconfig(0, 0, "") + ')')
+
+    try {
+        var fso = new ActiveXObject("Scripting.FileSystemObject");
+        var file = fso.OpenTextFile("config.json", 1); // 1 = ForReading
+        var jsonData = file.ReadAll();
+        file.Close();
+        return JSON.parse(jsonData); // Now using the library's parse method
+    } catch (e) {
+        DisplayMessage(e.message)
+        //console.error("Error loading config: " + e.message);
+        return {}; // Return an empty object on error
+    }
 }
 function SaveConfig(cg)
 {
-    return window.external.MIJconfig(1, 0, $.toJSON(cg))
+    //return window.external.MIJconfig(1, 0, $.toJSON(cg))
+
+    try {
+        var fso = new ActiveXObject("Scripting.FileSystemObject");
+        var file = fso.CreateTextFile("config.json", true); // true = overwrite
+        file.WriteLine(JSON.stringify(cg)); // Convert object to JSON string
+        file.Close();
+    } catch (e) {
+        DisplayMessage(e.message)
+        //console.error("Error saving config: " + e.message);
+    }
 }
 function GetDevices()
 {
