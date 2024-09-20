@@ -25,7 +25,7 @@
 </div>
 <div id="DriverManager" class="Panel">	
 	<div id="caption" ><h1>Driver manager</h1><button id="reload" style="width:120px; float:right;" onclick="window.location.reload()">Reload this page</button></div>
-	<div style="margin:0;padding:0;color: #00529B;background-color: #BDE5F8 background:width:100%;font-size:12px;">
+	<div style="margin:0; padding:0; color: #00529B; background-color: #BDE5F8; width:100%; font-size:12px;">
 		<ol style="border: 1px solid;padding:5px 5px 5px 70px;background-repeat: no-repeat;background-position: 10px center;background-image: url('misc/images/Attention.png');color: #00529B;background-color: #BDE5F8;">
 			<li>Plug in your PLAY STATION 3 controller(s) or compatible USB Bluetooth Adapter(s).</li>
 			<li>Check the device(s) for loading MotioninJoy driver in the following list.</li>
@@ -69,5 +69,6 @@
 <script type="text/javascript" src="misc/jquery.js" charset="UTF-8"></script>
 <script type="text/javascript" src="misc/common.js" charset="UTF-8"></script>
 <script type="text/javascript" src="misc/driver_manager.js" charset="UTF-8"></script>
+<script type="text/javascript" src="misc/json2.js" charset="UTF-8"></script>
 </body>
 </html>

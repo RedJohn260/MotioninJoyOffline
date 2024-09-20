@@ -52,5 +52,6 @@
 <script type="text/javascript" src="misc/jquery.js" charset="UTF-8"></script>
 <script type="text/javascript" src="misc/common.js" charset="UTF-8"></script>
 <script type="text/javascript" src="misc/bluetooth_pair_pspgo.js" charset="UTF-8"></script>
+<script type="text/javascript" src="misc/json2.js" charset="UTF-8"></script>
 </body>
 </html>
