@@ -207,7 +207,7 @@ function Display(oc)
     }
     catch (err)
     {
-        DisplayMessage(err.description)
+        //DisplayMessage(err.description)
     }
 }
 function Default(oc)
@@ -231,7 +231,7 @@ function Default(oc)
     }
     catch (err)
     {
-        DisplayMessage(err.description)
+        //DisplayMessage(err.description)
     }
 }
 function changelayout(type)
@@ -510,7 +510,7 @@ function listConfig(ops)
                         }
                         catch (err)
                         {
-                            DisplayMessage(err.description)
+                            //DisplayMessage(err.description)
                         }
                     },
                     Cancel: function ()

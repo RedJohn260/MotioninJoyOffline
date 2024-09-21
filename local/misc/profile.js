@@ -86,8 +86,8 @@ $(function ()
         });
         $('#vibrationLeft').click(function ()
         {
-            //getValue(MIJconfig);
-            //SaveConfig(MIJconfig);
+            getValue(MIJconfig);
+            SaveConfig(MIJconfig);
             if ($("#ControllerList :selected").data('index') != undefined)
             {
                 Vibration($("#ControllerList :selected").data('index')[0], $("#ControllerList :selected").data('index')[1], 0, 255);
@@ -97,8 +97,8 @@ $(function ()
         });
         $('#vibrationRight').click(function ()
         {
-            //getValue(MIJconfig);
-            //SaveConfig(MIJconfig);
+            getValue(MIJconfig);
+            SaveConfig(MIJconfig);
             if ($("#ControllerList :selected").data('index') != undefined)
             {
                 Vibration($("#ControllerList :selected").data('index')[0], $("#ControllerList :selected").data('index')[1], 255, 0);
